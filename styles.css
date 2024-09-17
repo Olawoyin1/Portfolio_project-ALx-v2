@@ -34,6 +34,7 @@ body{
 
 img {
     max-width: 100%;
+    height: fit-content;
     margin: 0;
 }
 
@@ -44,8 +45,15 @@ img {
     height: 100vh;
 }
 
+.icon{
+    width: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* font-size: 100px; */
+}
+
 .main{
-    width: 450px;
+    width: 550px;
     z-index: 1;
     /* height: 450px; */
     
@@ -60,6 +68,10 @@ img {
     
 }
 
+label{
+    font-size: 13px !important;
+}
+
 .todo-footer{
     position: absolute;
     left: 0;
@@ -69,12 +81,26 @@ img {
     /* width: ; */
 }
 
-input{
+.input{
+    /* width: 100; */
+    width: 100%;
     border: none;
     outline: none;
+    padding: 7px 10px;
+    font-size: 13px !important;
+    font-weight: 500;
 
 }
 
+input::placeholder{
+    font-size: 13px !important;
+}
+
+input[type="checkbox"]{
+    color: black !important;
+    border: 1px solid #ccc !important;
+    margin-top: 2px;
+}
 
 .completed{
     text-decoration: line-through;

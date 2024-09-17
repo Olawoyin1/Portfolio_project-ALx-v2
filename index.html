@@ -9,6 +9,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
     
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   
   <title>Todo app</title>
 
@@ -23,39 +24,88 @@
       <img src="./images/bg-desktop-light.jpg" alt="">
     </div>
     <div class="main">
-      <div class="d-flex align-items-center justify-content-between">
-        <h3 class="text-white fw-bold">TODO</h3>
-        <img src="./images/icon-moon.svg" alt="">
+      
+      <!-- ==========HEADER STARTS HERE ========== -->
+      <div class="row m-0 align-items-center justify-content-between mb-3">
+        <h3 class="col-sm-2 text-white fw-bold">TODO</h3>
+        <form action="" class="col-sm-8 search">
+        <input type="search" class="shadow-sm input" placeholder="Search Your List...">
+      </form>
+      <img src="./images/icon-moon.svg" class="col-sm-2 icon" alt="">
+    </div>
+    <!-- ==========HEADER ENDS HERE ========== -->
+    
+    
+    <h6></h6>
+    
+    <!-- ==========ADD TO THE LIST STARTS HERE ========== -->
+    <div class="row m-0">
+      <div class="col-sm-4 m-0 p-0 ">
+        <form action="" class="m-0">
+          <label for="title" class="text-md-white">Title</label>
+          <input type="text" class="shadow-sm input my-2" placeholder="Create a new todo...">
+        </form>
       </div>
-      <div class="form">
-        <form action="">
-          <input type="text" class="w-100 p-2 px-3  shadow-sm my-3" placeholder="Create a new todo...">
+      <div class="col-sm-8 p-0 ps-1">
+        <form action="" >
+          <label for="desc" class="text-md-white">Description</label>
+          <input type="text" class="shadow-sm input my-2" placeholder="Description ...">
         </form>
       </div>
 
-      <div class="todos shadow">
 
-        <div class="todo p-2 px-3 border-bottom d-flex align-items-center gap-3">
-          <input type="radio" name="todo" id="todo">
+    </div>
+    <!-- ==========ADD TO THE LIST ENDS HERE ========== -->
+
+
+
+      
+    <div class="todos shadow">
+      <div class="todo p-2 px-3 border-bottom d-flex align-items-center gap-3">
+
+
+        <!-- <input type="radio" name="todo" id="todo"> -->
+        <div class="desc">
+
           <p class="fw-bold">Alx task yet to be done</p>
+          <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doemque, sint a. Sit ratione cum libero nobis maxime dolor rerum perspiciatis.</small>
         </div>
-
-        <div class="todo p-2 px-3 border-bottom d-flex align-items-center gap-3">
-          <input type="radio" name="todo" id="todo">
-          <p class="fw-bold completed">Alx Task has been completed</p>
-        </div>
-
-
-        <div class="todo-footer d-flex align-items-center justify-content-between p-2 px-3 border-top">
-          <small>4 items left</small>
-          <div class="d-flex gap-3">
-            <small>All</small>
-            <small>Active</small>
-            <small>Completed</small>
-          </div>
-          <small>Clear Completed</small>
+        <div class="actions m-0 d-flex flex-column align-items-center">
+          <i class="uil uil-edit"></i>
+          <i class="uil uil-trash-alt"></i>
+          <!-- <i><input type="checkbox" name="" id=""></i> -->
+          <i class="uil uil-check-square"></i>
+          <i class="uil uil-square-full"></i>
+          
         </div>
       </div>
+
+      <div class="todo p-2 px-3 border-bottom d-flex align-items-center gap-3">
+        <div class="desc">
+          <p class="fw-bold completed">Alx Task has been completed</p>
+          <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doemque, sint a. Sit ratione cum libero nobis maxime dolor rerum perspiciatis.</small>
+        </div>
+        <div class="actions m-0 d-flex flex-column align-items-center">
+          <i class="uil uil-edit"></i>
+          <i class="uil uil-trash-alt"></i>
+          <!-- <i><input type="checkbox" name="" id=""></i> -->
+          <i class="uil uil-check-square"></i>
+          <i class="uil uil-square-full"></i>
+          
+        </div>
+      </div>
+
+
+      <div class="todo-footer d-flex align-items-center justify-content-between p-2 px-3 border-top">
+        <small>4 items left</small>
+        <div class="d-flex gap-3">
+          <small>All</small>
+          <small>Active</small>
+          <small>Completed</small>
+        </div>
+        <small>Clear Completed</small>
+      </div>
+    </div>
 
     </div>
   </div>
